@@ -31,6 +31,7 @@ jobs:
           mkdir -p test-results
           mkdir -p test-reports
           ~/jmeter/bin/jmeter -n -t test-plan/test-plan-jemeter-website.jmx -l results/results.xml -j results/jmeter.log -e -f -o test-reports
+          mv ~/jmeter/bin/test-result.xml results/test-results.xml
 
       # Step 4: Save results as artifacts
       - name: Upload results folder as artifacts
@@ -40,3 +41,4 @@ jobs:
           path: |
             results/
             test-results/
+            test-reports
