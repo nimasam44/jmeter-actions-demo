@@ -1,3 +1,4 @@
+# This is a basic workflow to help you get started with Actions
 
 name: Hello GitHub Actions
 
@@ -31,7 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          pwd
           echo Add other actions to build,
           echo MINOR CHANGES
-          echo JMeter with GitHub Action is COMPLETED.
+          echo Jmeter with GitHub ACtions is COMPLETED.
